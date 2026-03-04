@@ -1,6 +1,9 @@
 # dependencies (bun install)
 node_modules
-
+.env
+.env.backup
+database.sqlite
+database.sqlite.backup
 # output
 out
 dist
