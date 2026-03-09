@@ -17,7 +17,9 @@ export const initDB = () => {
   `);
 
   // Seed data awal jika tabel masih kosong
-  const count = db.query("SELECT COUNT(*) as total FROM users").get() as { total: number };
+  const count = db.query("SELECT COUNT(*) as total FROM users").get() as {
+    total: number;
+  };
 
   if (count.total === 0) {
     db.exec(`
